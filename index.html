@@ -5,80 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, резюме">
     <meta name="description" content="Краткое сайт-резюме">
+    <link rel="stylesheet" href="style.css">
     <title>сайт-резюме</title>
 </head>
 <body>
-    <img src="me.JPEG" alt="моя фотография" width="250px" >
+    <div class="container">
+        <div class="card" id="card1">
+            <img src="me.JPEG" alt="моя фотография" class="photo">
+            <div class="content">
+                <h1>Сивцов Иван</h1>
+                <p>Здравствуйте! Меня зовут Сивцов Иван. Не так давно я <strong>закончил школу</strong> и теперь собираюсь поступать в <em>университет</em></p>
+                <a href="https://t.me/Sivtsov_Ivan" target="_blank" rel="noopener noreferrer" class="link">Telegram</a>
+                <strong>|</strong>
+                <a href="https://m.vk.com/ivsiv" target="_blank" rel="noopener noreferrer" class="link">VK</a>
+            </div>
 
-    <h1>Сивцов Иван</h1>
-
-    <p>Здравствуйте! Меня зовут Сивцов Иван. Не так давно я <strong>закончил школу</strong> и теперь собираюсь поступать в <em>университет</em></p>
-
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum qui commodi ab assumenda sapiente maiores laborum laboriosam est recusandae quibusdam.</p>
-    
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum qui commodi ab assumenda sapiente maiores laborum laboriosam est recusandae quibusdam.</p>
-
-    <a href="https://t.me/Sivtsov_Ivan" target="_blank" rel="noopener noreferrer">Telegram</a>
-    <strong>|</strong>
-    <a href="https://m.vk.com/ivsiv" target="_blank" rel="noopener noreferrer">VK</a>
-
-    <h1>Мои хобби</h1>
-    <ul>
-        <li>Компьютерные игры</li>
-        <li>Чтение</li>
-        <li>Политика</li>
-        <li>История</li>
-        <li>Программирование</li>
-    </ul>
-    
-    <h1>Семья</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Имя</th>
-                <th>Возраст</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ирина</td>
-                <td>43</td>
-            </tr>
-            <tr>
-                <td>Владимир</td>
-                <td>53</td>
-            </tr>
-            <tr>
-                <td>Иван</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Егор</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>Злата</td>
-                <td>12</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h1>Связаться со мной</h1>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        </div>
+        <div class="card" id="card2">
+            <h1>Мои хобби</h1>
+            <ul>
+                <li>Компьютерные игры</li>
+                <li>Чтение</li>
+                <li>Политика</li>
+                <li>История</li>
+                <li>Программирование</li>
+            </ul>
+        </div>
+        <div class="card" id="card3">
+            <h1>Семья</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Возраст</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ирина</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>Владимир</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>Иван</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Егор</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Злата</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="card4">
+            <form class="form">
+            <h1>Связаться со мной</h1>
+                <div class="form-item">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <br>
+                <div class="form-item">
+                    <label for="mail">Ваш email:</label>
+                    <input type="email" id="mail" placeholder="Введите email">
+                </div>
+                <br>
+                <div class="form-item">
+                    <label for="msg">Ваше сообщение:</label>
+                    <textarea id="msg" cols="20" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <br>
+            </form>
+            <input type="submit" class="btn">
+        </div>
     </div>
-    <br>
-    <div>
-        <label for="mail">Ваш email:</label>
-        <input type="email" id="mail" placeholder="Введите email">
-    </div>
-    <br>
-    <div>
-        <label for="msg">Ваше сообщение:</label>
-        <textarea id="msg" cols="20" rows="10" placeholder="Введите ваше сообщение"></textarea>
-    </div>
-    <br>
-    <input type="submit">
 </body>
 </html>

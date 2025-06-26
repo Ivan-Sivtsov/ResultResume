@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ruslan+Display&family=Russo+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    font-size: 16px;
+    font-family: Roboto;
+    color: #0F141E;
+    background-color: #F1F1F1;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.card{
+    background-color:floralwhite;
+    padding: 10px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* ССЫЛКИ */
+
+.link{
+    text-decoration: none;
+    color: rgb(17, 0, 255);
+}
+
+.link:hover{
+    color: rgb(146, 138, 255);;
+}
+
+.link:active{
+    color: rgb(12, 0, 186);;
+}
+
+.link:visited{
+    color: rgb(187, 0, 255);;
+}
+
+.btn{
+    border: none;
+    padding: 10px;
+    background-color:deepskyblue;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.btn:active{
+    background-color: rgb(0, 164, 219);
+}
+
+#card1{
+    display: flex;
+    background-color: azure;
+}
+
+.content{
+    display: block;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.photo{
+    width: 250px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.form h1{
+    text-align: center;
+}
+
+.form label{
+    display: block;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px 14px;
+    outline: none;
+}
+
+@media(max-width: 700px){
+    #card1{
+    display: block;
+    align-items: center;
+    background-color: azure;
+}
+    .photo{
+    width: 250px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
